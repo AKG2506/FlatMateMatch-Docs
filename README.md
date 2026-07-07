@@ -44,19 +44,21 @@ Built as a production-ready full-stack application with a modern cloud-native ar
 - [Complete User Journey](#complete-user-journey)
 - [What Makes FlatMateMatch Different?](#what-makes-flatmatematch-different)
 - [Repository Overview](#repository-overview)
-- [AI Compatibility Engine](#-ai-compatibility-engine)
-- [Technology Stack](#️-technology-stack)
-- [System Architecture](#️-system-architecture)
-- [Backend Features](#️-backend-features)
-- [Database Design](#-database-design)
-- [Security](#-security)
-- [Testing](#-testing)
-- [Performance Optimizations](#-performance-optimizations)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-- [Author](#-author)
+- [AI Compatibility Engine](#ai-compatibility-engine)
+- [Technology Stack](#technology-stack)
+- [System Architecture](#system-architecture)
+- [Backend Features](#backend-features)
+- [Database Design](#database-design)
+- [Security](#security)
+- [Testing](#testing)
+- [Performance Optimizations](#performance-optimizations)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+- [Author](#author)
 
 ---
+
+<a id="introduction"></a>
 
 # Introduction
 
@@ -81,6 +83,8 @@ FlatMateMatch introduces an AI-powered compatibility layer that evaluates these 
 Instead of becoming another rental listing website, FlatMateMatch attempts to become a **compatibility-first roommate discovery platform**.
 
 ---
+
+<a id="why-flatmatematch"></a>
 
 # Why FlatMateMatch?
 
@@ -113,6 +117,8 @@ The platform asks:
 
 ---
 
+<a id="product-vision"></a>
+
 # Product Vision
 
 The long-term vision of FlatMateMatch is to become an intelligent roommate discovery platform where AI assists users throughout the complete roommate journey.
@@ -140,6 +146,8 @@ The objective is not only to help people **find accommodation**, but to help the
 
 ---
 
+<a id="core-features"></a>
+
 # Core Features
 
 | Category | Features |
@@ -159,6 +167,8 @@ The objective is not only to help people **find accommodation**, but to help the
 | Testing | Unit and integration testing with Jest and Supertest |
 
 ---
+
+<a id="product-overview"></a>
 
 # Product Overview
 
@@ -191,6 +201,8 @@ A lister is someone who owns or manages a property. The lister can:
 
 ---
 
+<a id="complete-user-journey"></a>
+
 # Complete User Journey
 
 ```mermaid
@@ -220,6 +232,8 @@ P --> Q[Users Connect]
 
 ---
 
+<a id="what-makes-flatmatematch-different"></a>
+
 # What Makes FlatMateMatch Different?
 
 Most roommate platforms stop at filtering. FlatMateMatch goes further.
@@ -229,6 +243,8 @@ Instead of recommending everyone within a city, it recommends the people **most 
 Compatibility is determined using AI-generated semantic representations of lifestyle preferences rather than manually assigning arbitrary scores to individual questionnaire answers. This creates a recommendation system that scales naturally as additional profile information is introduced in future versions.
 
 ---
+
+<a id="repository-overview"></a>
 
 # Repository Overview
 
@@ -246,6 +262,8 @@ The complete application consists of multiple independently deployed components.
 | Images | Cloudinary |
 
 ---
+
+<a id="ai-compatibility-engine"></a>
 
 # 🧠 AI Compatibility Engine
 
@@ -397,6 +415,8 @@ Embeddings are regenerated only when a user updates their profile.
 
 ---
 
+<a id="technology-stack"></a>
+
 # ⚙️ Technology Stack
 
 Rather than selecting technologies based purely on popularity, every component was chosen to solve a specific engineering problem.
@@ -444,6 +464,8 @@ This keeps user interactions responsive even if email delivery becomes slow.
 **Docker** — Guarantees identical environments across development, testing, and production, since the same container image is deployed everywhere.
 
 ---
+
+<a id="system-architecture"></a>
 
 # 🏗️ System Architecture
 
@@ -604,7 +626,7 @@ Redis is used for multiple independent workloads:
 
 Using Redis for multiple workloads minimizes infrastructure while improving performance.
 
-# Database Design
+## Database Design
 
 Persistent application data is stored in PostgreSQL using Prisma ORM. Core entities include:
 
@@ -699,6 +721,8 @@ FlatMateMatch was built around several engineering principles:
 These principles keep the application maintainable while remaining deployable on low-cost cloud infrastructure.
 
 ---
+
+<a id="backend-features"></a>
 
 # ⚙️ Backend Features
 
@@ -808,6 +832,8 @@ These jobs run independently without affecting user requests.
 
 ---
 
+<a id="database-design"></a>
+
 # 🗄️ Database Design
 
 The application uses PostgreSQL with Prisma ORM. Core models include:
@@ -823,6 +849,8 @@ The application uses PostgreSQL with Prisma ORM. Core models include:
 Relationships are enforced using Prisma, ensuring referential integrity across the application.
 
 ---
+
+<a id="security"></a>
 
 # 🔒 Security
 
@@ -852,6 +880,8 @@ Users cannot access or modify resources they do not own.
 
 ---
 
+<a id="testing"></a>
+
 # 🧪 Testing
 
 Testing is performed using Jest and Supertest. Coverage includes:
@@ -868,6 +898,8 @@ Tests are executed against a dedicated test database to isolate development data
 
 ---
 
+<a id="performance-optimizations"></a>
+
 # 🚀 Performance Optimizations
 
 - **Embedding Cache** — AI embeddings are cached inside Redis to avoid repeated inference
@@ -877,6 +909,8 @@ Tests are executed against a dedicated test database to isolate development data
 - **Stateless Backend** — application containers remain stateless; persistent state lives in managed cloud services
 
 ---
+
+<a id="future-improvements"></a>
 
 # 📈 Future Improvements
 
@@ -905,11 +939,15 @@ The current implementation serves as the Minimum Viable Product (MVP). Planned i
 
 ---
 
+<a id="license"></a>
+
 # 📄 License
 
 This repository is currently maintained as a private project. A public release may be considered in the future.
 
 ---
+
+<a id="author"></a>
 
 # 👨‍💻 Author
 
