@@ -604,7 +604,7 @@ Redis is used for multiple independent workloads:
 
 Using Redis for multiple workloads minimizes infrastructure while improving performance.
 
-## Database Design
+# Database Design
 
 Persistent application data is stored in PostgreSQL using Prisma ORM. Core entities include:
 
