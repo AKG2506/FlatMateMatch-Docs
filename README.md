@@ -13,7 +13,7 @@ Built as a production-ready full-stack application with a modern cloud-native ar
 [![Live](https://img.shields.io/badge/Status-Live-success)]()
 ![Next.js](https://img.shields.io/badge/Frontend-Next.js_15-black?logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
-![Express](https://img.shields.io/badge/Backend-Express_5-black?logo=express)
+![Express](https://img.shields.io/badge/Backend-Express-black?logo=express)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript)
 ![Prisma](https://img.shields.io/badge/ORM-Prisma-2D3748?logo=prisma)
 ![PostgreSQL](https://img.shields.io/badge/Database-Neon_Postgres-4169E1?logo=postgresql)
@@ -309,7 +309,7 @@ flowchart LR
 
 A[Completed User Profile] --> B[Lifestyle Description Builder]
 B --> C[Sentence Embedding Model]
-C --> D[768-Dimensional Vector]
+C --> D[384-Dimensional Vector]
 D --> E[Redis Cache]
 E --> F[Cosine Similarity]
 F --> G[Practical Filters]
@@ -327,7 +327,7 @@ Current model:
 all-MiniLM-L6-v2
 ```
 
-Using the Transformers.js runtime allows embeddings to be generated entirely inside the backend.
+This model produces 384-dimensional sentence embeddings. Using the Transformers.js runtime allows embeddings to be generated entirely inside the backend.
 
 Advantages:
 
@@ -425,7 +425,7 @@ Rather than selecting technologies based purely on popularity, every component w
 |--------|------------|---------|
 | Frontend | Next.js 15 | Modern React framework with App Router |
 | Language | TypeScript | End-to-end type safety |
-| Backend | Express 5 | Lightweight REST API framework |
+| Backend | Express | Lightweight REST API framework |
 | Database | PostgreSQL (Neon) | Reliable relational storage |
 | ORM | Prisma | Type-safe database access |
 | AI | Transformers.js | Local embedding generation |
@@ -943,7 +943,7 @@ The current implementation serves as the Minimum Viable Product (MVP). Planned i
 
 # 📄 License
 
-This repository is currently maintained as a private project. A public release may be considered in the future.
+This repository is currently maintained as a private project. A public release, including CI test visibility, may be considered in the future.
 
 ---
 
@@ -971,7 +971,5 @@ FlatMateMatch was designed and built end-to-end, including:
 <div align="center">
 
 **Built with TypeScript, AI, Docker, and modern cloud infrastructure.**
-
-⭐ If you found this project interesting, consider giving it a star.
 
 </div>
